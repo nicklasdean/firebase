@@ -1,6 +1,6 @@
 html, body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
 }
 body, div, h1, form, input, p {
@@ -11,19 +11,29 @@ body, div, h1, form, input, p {
     font-size: 16px;
     color: #666;
 }
+
 h1 {
     padding: 10px 0;
     font-size: 32px;
     font-weight: 300;
     text-align: center;
 }
+
 p {
     font-size: 12px;
 }
+
 hr {
     color: #a9a9a9;
     opacity: 0.3;
 }
+
+#content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main-block {
     max-width: 340px;
     min-height: 460px;
@@ -34,6 +44,19 @@ hr {
     box-shadow: 1px 2px 5px rgba(0,0,0,.31);
     background: #ebebeb;
 }
+
+.output-container{
+    display:flex;
+}
+
+.output{
+    width:500px;
+}
+
+#forms-container{
+    display:flex;
+}
+
 form {
     margin: 0 30px;
 }
