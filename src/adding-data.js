@@ -22,4 +22,11 @@ const db = getFirestore(app);
 const citiesRef = collection(db, "cities");
 
 //Add data: Name, state, country, capital, population, regions
-await setDoc(doc(citiesRef, "CPH"), {});
+await setDoc(doc(citiesRef, "CPH"), {
+    name:"Copenhagen",
+    state:"Hovedstaden",
+    country:"Sweden",
+    capital:true,
+    population: 627000,
+    regions:["Nørrebro","Vesterbro","Nordvest"]
+});

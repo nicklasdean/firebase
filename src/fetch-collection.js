@@ -24,3 +24,7 @@ const cities = collection(db, "cities");
 // Fetch all documents
 const snapshot = await getDocs(cities);
 
+snapshot.forEach((city) =>{
+    console.log(city.data());
+})
+
