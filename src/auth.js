@@ -18,31 +18,30 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
 //Fetching email & password
-const email = document.querySelector("#id");
-const password = document.querySelector("#password");
 /*
-createUserWithEmailAndPassword(auth, "nicklas@kea.dk", "alsidhsoubDAS")
+createUserWithEmailAndPassword(auth, "nicklas@kea.dk", "khgjhgjy658")
     .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
     })
-    .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert("My dear friend. It has come to my attention that your password does not need the validation criteria of google password services" +
-            "I would therefore in a very friendly way suggest you to MAKE YOUR PASSWORD LONGER okay??")
+    .catch((err) => {
+        const errorCode = err.code;
+        const errorMessage = err.message;
+        alert(errorMessage);
     });
 */
 
-console.log(auth.currentUser);
+// console.log(auth.currentUser);
 
-/*
-await signInWithEmailAndPassword(auth, "nicklas@kea.dk", "alsidhsoubDAS")
+
+await signInWithEmailAndPassword(auth, "nicklas@kea.dk", "khgjhgjy658")
     .then((userCredential) => {
         const user = userCredential.user;
     })
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        alert(errorMessage);
     });
-*/
+
+console.log(auth.currentUser);
